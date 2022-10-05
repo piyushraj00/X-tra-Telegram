@@ -33,7 +33,7 @@ class Var(object):
         t_file = open(TEMP_DOWNLOAD_DIRECTORY+"auth_token.txt","w")
         t_file.write(AUTH_TOKEN_DATA)
         t_file.close()
-    PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID", None)
+    PRIVATE_GROUP_ID = os.environ.get("PRIVATE_GROUP_ID", "-1001333964223")
     if PRIVATE_GROUP_ID != None:
         try:
             PRIVATE_GROUP_ID = int(PRIVATE_GROUP_ID)
